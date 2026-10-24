@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Bokhyllan.Api/Bokhyllan.Api.csproj" />
+    <Project Path="src/Bokhyllan.Contracts/Bokhyllan.Contracts.csproj" />
+    <Project Path="src/Bokhyllan.Web/Bokhyllan.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Bokhyllan.Api.Tests/Bokhyllan.Api.Tests.csproj" />
+    <Project Path="tests/Bokhyllan.Web.Tests/Bokhyllan.Web.Tests.csproj" />
+  </Folder>
+</Solution>
