@@ -21,8 +21,13 @@ public sealed class User
     //A random value that changes when the password changes or the user logs out everywhere.
     //Access tokens carry a copy; if the copies differ the token is no longer valid.
 
-    public string
+    public string SecurityStamp { get; set; } = "";
+    // Two-factor login with an authenticator app.
+    public bool TwoFactorEnabled { get; set; }
 
+    // The TOTP secret, encrypted with Data Protection. A database leak does not reveal it.
+    public string? TopSecretProtected { get; set; }
+    // The last time step whose code was accepted. Codes from that step or older are refused 
 
     public long? TotpLastUsedStep { get; set; }
     public DateTimeOffset CreatedAt { get; set; }
